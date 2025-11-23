@@ -39,7 +39,7 @@ logger.setLevel(logging.INFO)
 
 # Конфигурация
 class Config:
-    BOT_TOKEN = "7487925725:AAHzJyVWRG2fklT0hQvaXrq-Cawq9vzomEQ"  # os.getenv("BOT_TOKEN")
+    BOT_TOKEN = "8288434073:AAFZcDkM1ifsXPE69J22XwErtI7NZesT2V0"  # os.getenv("BOT_TOKEN")
     RENDER_APP_URL = "https://ludobot-lx4c.onrender.com"  # os.getenv("RENDER_APP_URL")
     ALLOWED_CHAT_IDS = [-1002157100033, -1002439723121]  # @Family_Worlds | @Einstein_bot_test_2
     CREATOR = "@andranik_amrahyan"
@@ -419,3 +419,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
