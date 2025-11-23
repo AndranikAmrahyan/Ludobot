@@ -403,6 +403,7 @@ def main():
     )
 
     # Регистрация обработчиков с применением фильтра
+    application.add_handler(CommandHandler("start", help_command, filters=allowed_chat))
     application.add_handler(CommandHandler("help", help_command, filters=allowed_chat))
     application.add_handler(CommandHandler("ludobot", ludobot_command, filters=allowed_chat))
     application.add_handler(CommandHandler("rec", rec_command, filters=allowed_chat))
@@ -419,4 +420,3 @@ def main():
 if __name__ == "__main__":
 
     main()
-
