@@ -147,6 +147,14 @@ async def rec_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def ludobot_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Обработчик команды /ludobot"""
+    await update.message.reply_text(
+        "🎰 <b>Технический перерыв</b>\n"
+        "Бот проходит обновление, чтобы покорять сердца игроков.",
+        parse_mode="HTML",
+        reply_to_message_id=update.message.message_id
+    )
+    return
+    
     # Проверяем, что команда является ответом на сообщение
     if not update.message.reply_to_message:
         await update.message.reply_text(
@@ -420,3 +428,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
