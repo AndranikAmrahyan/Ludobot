@@ -347,7 +347,7 @@ async def ludobot_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Добавляем статистику
         if total_predictions > 0:
             stats_text = f"📊 Сегодня правильно предсказаны: {correct_predictions}/{total_predictions} (Винрейт: {win_rate:.1f}%)"
-            response += f"\n{stats_text}"
+            # response += f"\n{stats_text}"
         
         response += "\n📚 Используйте <code>/rec</code> для получения рекомендаций по стратегии"
         # response += f"📊 Проанализировано результатов: {len(found_lines)}"
@@ -507,3 +507,4 @@ def main():
 if __name__ == "__main__":
 
     main()
+
