@@ -17,6 +17,10 @@ ENV/
 .env.test
 .env.production
 
+# Session files
+*.session
+*.session-journal
+
 # IDE
 .vscode/
 .idea/
